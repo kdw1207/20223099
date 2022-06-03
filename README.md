@@ -164,3 +164,28 @@ NI : nice 우선순위 번호
 * __시그널__ - 어떤 이벤트의 발생을 프로세스에게 알려주는 것이다, kill -l명령어를 통해 확인 가능하다.
 
 ![image](https://user-images.githubusercontent.com/102851163/171894828-4801e831-bf42-407e-88a7-0f2b737a64f0.png)
+
+* __사용 예시__
+```
+ex) pid 1
+
+//시그널을 생략할 경우 기본 시그널 값인 SIGTERM(15)로 적용됨
+# kill 1
+# kill -s 15 1
+
+//SIGTERM
+# kill -s SIGTERM 1
+
+//SIG를 뺴고 입력 가능
+# kill -s TERM 1
+
+// -s옵션을 빼고 -시그널번호, -시그널 형태로 사용 가능
+# kill -15 1
+# kill -SIGTERM 1
+# kill -TERM 1
+```
+
+![image](https://user-images.githubusercontent.com/102851163/171900718-2e73c8aa-12ea-4f9a-8fed-47b247c4f2b9.png "프로세스 종료 사용 예시")
+
+
+# vim에디터에서 매크로 사용방법 조사
