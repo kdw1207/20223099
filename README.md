@@ -27,7 +27,7 @@ Tasks : 프로세스 개수
   ```
     KiB Mem, Swap : 각 메모리의 상태 정보
     
-* 프로세스 상태 정보
+* __프로세스 상태 정보__
 ``` 
 PID : 프로세스 ID(PID)
 USER : 프로세스를 실행시킨 사용자 ID
@@ -42,7 +42,7 @@ S : 프로세스의 상태[S(sleeping), R(running), W(swapped out process), Z(zo
 COMMAND : 실행된 명령어
 ```
 
-* Top 명령어 옵션(top 실행 중 사용가능)
+* __Top 명령어 옵션(top 실행 중 사용가능)__
 ```
 shift + p : CPU 사용률이 높은 프로세스 순서대로 표시
 shift + m : 메모리 사용률이 높은 프로세스 순서대로 표시
@@ -70,7 +70,7 @@ U : u랑 같음
 ![image](https://user-images.githubusercontent.com/102851163/171877631-2c0fb9c9-a76c-451c-b0a2-509f8219cfa4.png "h")
 
 
-* Tip 명령어 페이지 이동
+* __명령어 페이지 이동__
 ```
 Page Down/Up 키를 통해 다음 목록과 이전 목록을 확인 가능하다.
 ```
