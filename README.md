@@ -131,4 +131,36 @@ NI : nice 우선순위 번호
 ## jobs
 작업이 중지된 상태, 백그라운드로 진행 중인 작업 상태, 변경되었지만 보고되지 않은 상태 등을 표시함
 
+![image](https://user-images.githubusercontent.com/102851163/171886480-0e597b29-7a75-4632-a018-180b569ee37f.png)
+
 * __사용법__ - jobs [옵션][job ID], jobs -x command[args]
+
+|옵션|내용|
+|:---:|:---:|
+|-l|프로세스 그룹 ID를 state 필드 앞에 출력|
+|-n|프로세스 그룹 중에 대포 프로세스 ID를 출력|
+|-p|각 프로세스 ID에 대해 한 행씩 출력|
+|command|지정한 명령어를 실행|
+
+* __jobs로 알 수 있는 상태 값__
+
+|상태|내용|
+|:---:|:---:|
+|Running|작업이 일시 중단되지 않았고 종료하지 않고 계속 진행 중임|
+|Done|작업이 완료되어 0을 반환하고 종료했음을 의미|
+|Done(code)|작업이 정상적으로 완료되었으며, 0이 아닌 코드를 반환했음을 의미|
+|Stopped|작업이 일시 중단|
+|Stopped(SIGTSTP)|SIGTSTP신호가 작업을 일시 중단|
+|Stopped(SIGSTOP)|SIGSTOP신호가 작업을 일시 중단|
+|Stopped(SIGTTIN)|SIGTTIN신호가 작업을 일시 중단|
+|Stopped(SIGTTOU)|SIGTTOU신호가 작업을 일시 중단|
+
+## kill
+대개 프로세스를 죽일 때 사용한다. 또는 프로세스에 시그널을 보내 원한는 작업을 하게 한다.
+
+* __사용법__ - $kill [pid], $kill -s [signal id][pid] $kill -s [signal text][pid]
+![image](https://user-images.githubusercontent.com/102851163/171890535-634a36d3-f17b-4895-af7b-9acaa1bfd7f2.png)
+
+* __시그널__ - 어떤 이벤트의 발생을 프로세스에게 알려주는 것이다, kill -l명령어를 통해 확인 가능하다.
+
+![image](https://user-images.githubusercontent.com/102851163/171894828-4801e831-bf42-407e-88a7-0f2b737a64f0.png)
